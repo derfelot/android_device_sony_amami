@@ -18,3 +18,17 @@ include device/sony/rhine-common/PlatformConfig2.mk
 TARGET_BOOTLOADER_BOARD_NAME := D5503
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=amami
+
+# TWRP
+TW_THEME := portrait_hdpi
+TARGET_RECOVERY_FSTAB := device/sony/amami/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+BOARD_HAS_NO_SELECT_BUTTON := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_FLASH_FROM_STORAGE := true
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/wled:backlight/brightness
+TW_MAX_BRIGHTNESS := 255
