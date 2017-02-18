@@ -34,5 +34,6 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/wled:backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_INCLUDE_CRYPTO := true
+TW_USE_TOOLBOX := true
 
 TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab
